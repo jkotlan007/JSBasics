@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -17,3 +18,11 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+=======
+var http = require('http');
+console.log('Nacteni konfigurace, databaze, lokalizace ap.');
+http.createServer(function (req, res) {
+  console.log('Zpracovani pozadavku z URL: ' + req.url);
+  res.end('Hello World');
+}).listen(1337);
+>>>>>>> 9319cdc877e2ff6ac6d15bc11e122b7de8a29e52
